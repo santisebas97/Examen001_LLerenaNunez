@@ -6,6 +6,7 @@
     <string name="edittext_hint_numeroA">numero A</string>
     <string name="textview_text_numeroB">Ingrese el numero B:</string>
     <string name="edittext_hint_numeroB">Numero B</string>
+    <string name="textview_hint_Resultado">Resultado de la operacion</string>
     <string name="button_text_sumar">Sumar</string>
     <string name="button_text_siguiente">Siguiente</string>
 

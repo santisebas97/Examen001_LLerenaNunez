@@ -45,6 +45,12 @@
         android:minHeight="48dp"
         tools:ignore="SpeakableTextPresentCheck" />
 
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/textview_hint_Resultado" />
+
     <Button
         android:id="@+id/buttonSumar"
         android:layout_width="match_parent"
@@ -56,4 +62,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/button_text_siguiente" />
+
 </LinearLayout>
