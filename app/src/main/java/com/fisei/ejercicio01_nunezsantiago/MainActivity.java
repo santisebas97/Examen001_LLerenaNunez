@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private Button sumar;
     private Button siguiente;
     int[]resultados;
+    private String resultado1;
 
 
     @Override
@@ -34,11 +35,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void Siguiente(View view){
         Intent intent = new Intent(this, SegundaActividad.class);
+        //intent.putExtra("key_A", numeroA);
         this.startActivity(intent);
     }
 
     public void Sumar(View view){
-            String numA = numeroA.getText().toString();
+        String numA = numeroA.getText().toString();
         String numB = numeroB.getText().toString();
 
         char[] A = numA.toCharArray();
@@ -49,18 +51,19 @@ public class MainActivity extends AppCompatActivity {
              resultados=new int[A.length];
             for(int i=0; i<=A.length;i++){
 
-                 resultados[i] = Integer.valueOf(A[1])+Integer.valueOf(B[i]);
+                 resultados[i] = Integer.valueOf(A[i])+Integer.valueOf(B[i]);
             }
         }else{
             Toast.makeText(this, "Ingrese numeros de igual longitud",Toast.LENGTH_LONG).show();
         }
 
-        /*
+
         for(int i=0;i<=A.length;i++){
-            resultado.setText(resultados[i]);
+            resultado1 += (resultados[i] + "\n");
         }
 
-         */
+        resultado.setText(resultado1);
+
     }
 
 }
