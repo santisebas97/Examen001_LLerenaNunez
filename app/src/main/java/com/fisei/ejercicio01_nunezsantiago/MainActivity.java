@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private EditText numeroA;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView resultado;
     private Button sumar;
     private Button siguiente;
+    int[]resultados;
 
 
     @Override
@@ -44,17 +46,21 @@ public class MainActivity extends AppCompatActivity {
 
 
         if(A.length==B.length){
-            int[] resultados=new int[A.length];
+             resultados=new int[A.length];
             for(int i=0; i<=A.length;i++){
 
                  resultados[i] = Integer.valueOf(A[1])+Integer.valueOf(B[i]);
             }
+        }else{
+            Toast.makeText(this, "Ingrese numeros de igual longitud",Toast.LENGTH_LONG).show();
         }
 
-        //resultado.setText(String.valueOf());
+        /*
+        for(int i=0;i<=A.length;i++){
+            resultado.setText(resultados[i]);
+        }
 
-
-
+         */
     }
 
 }

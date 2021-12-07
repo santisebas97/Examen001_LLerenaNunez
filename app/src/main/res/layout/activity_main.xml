@@ -55,7 +55,7 @@
         android:id="@+id/buttonSumar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="Siguiente"
+        android:onClick="Sumar"
         android:text="@string/button_text_sumar" />
 
     <Button
