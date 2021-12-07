@@ -45,9 +45,19 @@ public class MainActivity extends AppCompatActivity {
 
         char[] A = numA.toCharArray();
         char[] B = numB.toCharArray();
+Integer longitud = numA.length();
+
+        if (numB.length() > numA.length()) {
+            longitud = numB.length();
+        }
+
+        int[] A1 = new int[longitud];
+        int[] A2 = new int[longitud];
 
 
-        if(A.length==B.length){
+
+
+        if(A.length!=B.length){
              resultados=new int[A.length];
             for(int i=0; i<=A.length;i++){
 

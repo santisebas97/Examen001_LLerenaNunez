@@ -10,4 +10,11 @@
     <string name="button_text_sumar">Sumar</string>
     <string name="button_text_siguiente">Siguiente</string>
 
+
+    <string name="textview_text_tituloresta">Siguiente</string>
+    <string name="textview_text_numAresta">Siguiente</string>
+
+    <string name="textview_text_numBresta">Siguiente</string>
+
+
 </resources>
