@@ -57,13 +57,15 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Ingrese numeros de igual longitud",Toast.LENGTH_LONG).show();
         }
 
-
+/*
         for(int i=0;i<=A.length;i++){
             resultado1 += (resultados[i] + "\n");
         }
 
         resultado.setText(resultado1);
-
+*/
     }
+
+
 
 }
